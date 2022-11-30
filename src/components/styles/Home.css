@@ -1,0 +1,81 @@
+
+.main_header{
+  height: 10vh;
+}
+
+.main_nav{
+  text-align: right;
+}
+
+.custom-btn {
+  margin: 10px  2px;
+  width: 130px;
+  height: 40px;
+  padding: 10px 17px ;
+  border: 2px solid #000;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+
+/* nav_login */
+.nav_login {
+  background: #000;
+ color: #fff;
+ z-index: 1;
+}
+.nav_login:after {
+ position: absolute;
+ content: "";
+ width: 100%;
+ height: 0;
+ bottom: 0;
+ left: 0;
+ z-index: -1;
+  background: #e0e5ec;
+ transition: all 0.3s ease;
+}
+.nav_login:hover {
+ color: #000;
+}
+.nav_login:hover:after {
+ top: 0;
+ height: 100%;
+}
+.nav_login:active {
+ top: 2px;
+}
+
+
+/* nav register */
+.nav_register {
+  background: #000;
+ color: #fff;
+ z-index: 1;
+}
+.nav_register:after {
+ position: absolute;
+ content: "";
+ width: 100%;
+ height: 0;
+ top: 0;
+ left: 0;
+ z-index: -1;
+ background: #e0e5ec;
+ transition: all 0.3s ease;
+}
+.nav_register:hover {
+ color: #000;
+}
+.nav_register:hover:after {
+ top: auto;
+ bottom: 0;
+ height: 100%;
+}
+.nav_register:active {
+ top: 2px;
+}

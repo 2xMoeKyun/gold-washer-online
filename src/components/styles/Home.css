@@ -7,8 +7,15 @@
   text-align: right;
 }
 
+.form-custom-btn{
+  justify-items: center;
+  text-align: right;/*!!!!!!!!!!!!*/
+}
+
 .custom-btn {
-  margin: 10px  2px;
+  margin-left: 3px;
+  margin-top: 10px;
+  /* margin: 10px  3px; */
   width: 130px;
   height: 40px;
   padding: 10px 17px ;

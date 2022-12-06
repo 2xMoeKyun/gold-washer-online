@@ -1,8 +1,11 @@
 import React from 'react';
-//import './styles/Register.css';
+import { flushSync } from 'react-dom';
+import Home from './Home'
+//import './styles/Login.css';
+
 
 function Submit(href){
-  fetch('', {
+    fetch('', {
     method: 'Get',
     headers: {
       'Content-Type': 'application/json'
@@ -12,9 +15,9 @@ function Submit(href){
   window.location.href = href
 }
 
-function Register({setuser}) {
+function Login() {
   return (
-    <div className="Register">   
+    <div className="Login">     
       <input type='text' value="login" />
       <input type='text' value='password' />
       <button onClick={() => Submit('/')}>Submit</button>
@@ -22,5 +25,4 @@ function Register({setuser}) {
   );
 }
 
-export default Register;
-
+export default Login;
